@@ -157,3 +157,8 @@ h1, h2 {
 {
     content:'Show abstract';
 }
+
+.jumbotron {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}

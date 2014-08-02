@@ -36,7 +36,7 @@
       <div class="header">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="">HOME</a></li>
-          <li><a href="cv.htm">CV</a></li>
+          <li><a href="CV">CV</a></li>
           <!--<li><a href="#">Contact</a></li>-->
         </ul>
         <h3>Nicolas Motz</h3>
@@ -51,7 +51,7 @@
 
             <div class="col-sm-8">
             <p>I am a PhD student in the Department of Economics at University College London. My research interests focus on political economy and applied game theory. I am going to be on the job market in the coming academic year.</p>
-            <p>You can download my CV as a PDF <a href="CV">here</a>. Alternatively, click <a href="cv.htm">here</a> for a html version.</p>
+            <p>You can download my CV as a PDF <a href="CV">here</a>. Alternatively, click <a href="CV">here</a> for a html version.</p>
             </div>
         </div>
       </div>

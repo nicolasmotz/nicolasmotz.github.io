@@ -158,6 +158,12 @@ h1, h2 {
     content:'Show abstract';
 }
 
-/*.col-sm-4 {
-  padding-left: 0px !important;
-}*/
+.jumbotron {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+td
+{
+padding:15px;
+}

@@ -41,21 +41,25 @@
 
 
       </div>
-
+      <div>
+      <a class="btn btn-default" href="NMotz-CV0814.pdf">CV as PDF</a>
+      </div>
       <div class="cv">
       <h1>Contact</h1>
       <p>Department of Economics <br>
       University College London <br>
       Gower Street <br>
-      London WC1E 6BT
+      London WC1E 6BT<br>
+      nicolas.motz.09@ucl.ac.uk<br>
+      Mobile: +44-751-5101830
       </p>
 
       <h1>Doctoral Studies</h1>
       <p>PhD Economics, University College London, 2009 to present.<br>
-      Thesis title: "On the Role of Interest Groups in Shaping Policy Outcomes".<br>
+      <!--p>Thesis title: "On the Role of Interest Groups in Shaping Policy Outcomes".<br><p-->
       Expected date of completion: Summer 2015.</p>
-      <h2>References</h2>
-      <!--div class="container">
+      <!--h2>References</h2>
+      <div class="container">
       <div class="row">
             <div class="col-sm-5">
             <p>Professor Ian Preston<br>
@@ -79,7 +83,7 @@
       <h1>Research Interests</h1>
       <p>Political Economy, Applied Game Theory</p>
 
-      <h1>Revious Education</h1>
+      <h1>Previous Education</h1>
       <p>MSc Economics, University of Warwick, distinction, 2009.</p>
       <p>Visiting research student on full scholarship, Jesus College, Oxford, 2007/08.</p>
       <p>Diploma in Economics, University of Trier, equivalent BSc first class honours, 2007.</p>
@@ -90,14 +94,17 @@
       <table>
       <tr><td>2010/11</td>	<td>Microeconomics (MSc Economic Policy), Advanced Microeconomics (MSc Economics)</td></tr>
 	  <tr><td>2011/12</td>	<td>Advanced Microeconomics (MSc Economics)</td></tr>
-	  <tr><td>2012/13</td>	<td>Public Economics (MSc Economics)</td></tr>
-      <tr><td>       </td>  <td>Award for Best Teaching Assistant on an MSc Optional Module</td></tr>
-	  <tr><td>2013/14</td>	<td>Microeconomics (MSc Economics), Health Economics (MSc Economics)</td></tr>
+	  <tr><td>2012/13</td>	<td>Public Economics (MSc Economics)<br> <i>Award for Best Teaching Assistant on an MSc Optional Module</i></td></tr>
+      <tr><td>2013/14</td>	<td>Microeconomics (MSc Economics), Health Economics (MSc Economics)</td></tr>
       </table>
+
+      <h1>Research Experience and Professional Activities</h1>
+      <p>Research Assistant to Aureo de Paula on "Identification and estimation of preference distributions when voters are ideological"</p>
+      <p>Referee for Economic Journal</p>
       </div>
 
       <div class="footer">
-        <p>© Nicolas Motz 2014</p>
+        <p>Last updated: 02 August 2014</p>
       </div>
 
     </div> <!-- /container -->

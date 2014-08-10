@@ -41,10 +41,8 @@
 
 
       </div>
-      <div>
-      <a class="btn btn-default" href="NMotz-CV0814.pdf">CV as PDF</a>
-      </div>
       <div class="cv">
+      <p class="text-center"><a class="btn btn-default" href="NMotz-CV0814.pdf">Download CV as PDF</a></p>
       <h1>Contact</h1>
       <p>Department of Economics <br>
       University College London <br>
@@ -104,7 +102,7 @@
       </div>
 
       <div class="footer">
-        <p>Last updated: 02 August 2014</p>
+        <p>Last updated: 05 August 2014</p>
       </div>
 
     </div> <!-- /container -->

@@ -14,26 +14,6 @@
 
    <url>
 
-      <loc>http://www.nmotz.com/cont/cv.htm</loc>
-
-      <changefreq>weekly</changefreq>
-
-      <priority>0.1</priority>
-
-   </url>
-
-   <url>
-
-      <loc>http://www.nmotz.com/cont/NMotz-CV0814.pdf</loc>
-
-      <changefreq>weekly</changefreq>
-
-      <priority>0.1</priority>
-
-   </url>
-
-   <url>
-
       <loc>http://www.nmotz.com/NMpolthreat.pdf</loc>
 
       <changefreq>weekly</changefreq>

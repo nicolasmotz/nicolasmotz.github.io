@@ -16,15 +16,15 @@ body {
 
 
 a:link, a:visited {
- color: #cc0033;
+ color: #FF6600;
 }
 
 a:link.mob, a:visited.mob {
- color: #333333;
+ color: #FF6600;
 }
 
 h1, h2 {
- color: #993300;
+ color: #000033;
 }
 
 /* Custom page header */
@@ -34,7 +34,7 @@ h1, h2 {
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover {
-    background-color: #993300;
+    background-color: #333366;
 }
 
 /* Make the masthead heading the same height as the navigation */
@@ -43,7 +43,7 @@ h1, h2 {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
-  color: #993300;
+  color: #000033;
 }
 
 /* Custom page footer */
@@ -76,7 +76,7 @@ h1, h2 {
 
 .jumbotron p {
   margin-top: 40px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 /* Supporting marketing content */
@@ -121,6 +121,7 @@ h1, h2 {
   
   .jumbotron p {
   margin-top: 0px;
+  font-size: 18px;
   }
   .marketing h1 {
   text-align: center;
@@ -145,8 +146,8 @@ h1, h2 {
 .cv h2 {
   font-size: 22px;
   margin-top: 24px;
-  margin-bottom: 24px;
-  margin-left: 0px;
+  margin-bottom: 12px;
+  margin-left: 12px;
 }
 
 .in.collapse+a.btn.showdetails:before

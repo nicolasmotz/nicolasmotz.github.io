@@ -72,6 +72,7 @@ h1, h2 {
   /*border-bottom: 1px solid #e5e5e5;*/
   padding-left: 0px;
   padding-right: 0px;
+  margin-bottom: 20px;
 }
 
 .jumbotron p {
@@ -81,22 +82,26 @@ h1, h2 {
 
 /* Supporting marketing content */
 .marketing {
-  margin: 40px 0;
+  margin: 0px 0;
 }
-.marketing p + h4 {
+.marketing p {
   margin-top: 28px;
 }
 .marketing h1 {
   text-align: center;
   font-size: 24px;
+  margin-top: 40px;
 }
 .marketing h2 {
-  margin-top: 40px;
-  font-size: 20px;
+  margin-top: 30px;
+  font-size: 18px;
 }
 .marketing p {
   text-align: justify;
   margin-top: 12px;
+}
+.marketing h4 {
+  font-size: 16px;
 }
 
 
@@ -124,12 +129,16 @@ h1, h2 {
   font-size: 17px;
   }
   .marketing h1 {
+  margin-top: 40px;
   text-align: center;
-  font-size: 30px;
+  font-size: 26px;
   }
   .marketing h2 {
   margin-top: 40px;
-  font-size: 26px;
+  font-size: 18px;
+  }
+  .marketing h4 {
+  font-size: 16px;
   }
 }
 }

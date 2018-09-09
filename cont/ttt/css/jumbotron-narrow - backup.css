@@ -1,0 +1,169 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.cv,
+.footer {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+
+a:link, a:visited {
+ color: #cc0033;
+}
+
+a:link.mob, a:visited.mob {
+ color: #333333;
+}
+
+h1, h2 {
+ color: #993300;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 15px;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover {
+    background-color: #993300;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  color: #993300;
+}
+
+/* Custom page footer */
+.footer {
+  margin-top: 30px;
+  padding-top: 0px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  /*background-color: #ffffcc;*/ 
+  text-align: left;
+  /*border: 1px solid #ff0033;*/
+  /*border-bottom: 1px solid #e5e5e5;*/
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.jumbotron p {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+.marketing h1 {
+  text-align: center;
+  font-size: 24px;
+}
+.marketing h2 {
+  margin-top: 40px;
+  font-size: 20px;
+}
+.marketing p {
+  text-align: justify;
+  margin-top: 12px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+ @media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
+  .marketing {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  
+  .jumbotron p {
+  margin-top: 0px;
+  }
+  .marketing h1 {
+  text-align: center;
+  font-size: 30px;
+  }
+  .marketing h2 {
+  margin-top: 40px;
+  font-size: 26px;
+  }
+}
+}
+
+.cv p {
+  font-size: 16px;
+  margin-left: 12px;
+}
+.cv h1 {
+  font-size: 26px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+.cv h2 {
+  font-size: 22px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  margin-left: 12px;
+}
+
+.in.collapse+a.btn.showdetails:before
+{
+    content:'Hide abstract';
+}
+.collapse+a.btn.showdetails:before
+{
+    content:'Show abstract';
+}
+
+.jumbotron {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+td {
+  padding-right:15px;
+  vertical-align: top;
+}

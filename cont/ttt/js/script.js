@@ -1,4 +1,5 @@
 var Board;
+var Theta;
 const huPlayer = -1;
 const aiPlayer = 1;
 const cells = document.querySelectorAll('.cell');
@@ -11,8 +12,10 @@ function loadTheta() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById('demo').innerText =
-      this.responseText;
+      Theta = this.responseText;
+      document.getElementByID('demo').innerText = Theta;
+      Theta = Theta.split(';')
+      document.getElementByID('demo').innerText = Theta;
     }
   };
   xhttp.open('GET', 'theta.txt', true);

@@ -1,23 +1,25 @@
-var Board;
-var Theta;
-var Theta1;      
-var Theta2;
-var Theta3;
-var out;
 const huPlayer = -1;
 const aiPlayer = 1;
 const cells = document.querySelectorAll('.cell');
 
-
-
+var Board;
+var move;
+var Theta;
+var Theta1;      
+var Theta2;
+var Theta3;
+var countRounds = 1;
+    
+    
 loadTheta(function() {
     startGame();
 });
 
 
 function loadTheta(callback) {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
+    var xhttp = new XMLHttpRequest();
+    
+    xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         Theta = this.responseText;
         Theta = Theta.split('\n');
@@ -30,25 +32,35 @@ function loadTheta(callback) {
         Theta3 = math.reshape(Theta3, [9, 6618]);
         callback();
       }
-  };
-  xhttp.open('GET', 'theta.txt', true);
-  xhttp.send();
+    };
+    xhttp.open('GET', 'theta.txt', true);
+    xhttp.send();
 }
 
 function startGame() {
     
     Board = math.zeros(1,9);
+    document.querySelector(".endgame").style.display = "none";
     for (var i = 0; i < cells.length; i++) {
 		cells[i].innerText = '';
 		cells[i].addEventListener('click', turnClick, false);
     }
+    
+    if (math.mod(countRounds, 2) === 0) {
+        move = choice(Board);
+        turn(move, aiPlayer);
+    } 
 
 }
 
 function turnClick(square) {
+    
 	turn(square.target.id, huPlayer);
-    move = choice(Board);
-    turn(move, aiPlayer);
+    if (checkWin(Board) != huPlayer) {
+        move = choice(Board);
+        turn(move, aiPlayer);
+    }
+    
 }
 
 function turn(squareId, player) {
@@ -60,6 +72,7 @@ function turn(squareId, player) {
         document.getElementById(squareId).innerText = 'O';
     }
     if (checkWin(Board) === player) gameover(player);
+    if (math.sum(math.abs(Board)) === 9) gameover(0);
 }
 
 function sigmoid(x) {
@@ -71,6 +84,7 @@ function output(Board) {
     var A2;
     var A3;
     var A4;
+    
     A1 = math.concat(math.ones(1,1),Board);
     A2 = math.multiply(A1, math.transpose(Theta1));
     A2 = math.dotMultiply(A2, math.smaller(0,A2));
@@ -140,12 +154,17 @@ function iMax(m) {
 }
 
 function gameover(player) {
-    if (player == huPlayer) {
-        document.getElementById('demo').innerText = 'Yay!';
-    } else {
-        document.getElementById('demo').innerText = 'D\'oh!';
-    }
     
+    countRounds += 1;
+    
+    if (player === huPlayer) {
+        document.querySelector(".endgame .text").innerText = 'You win!';
+    } else if (player === aiPlayer) {
+        document.querySelector(".endgame .text").innerText = 'Nouri wins!';
+    } else {
+        document.querySelector(".endgame .text").innerText = 'Tied!';
+    }
+    document.querySelector(".endgame").style.display = "block";
     for (var i = 0; i < cells.length; i++) {
 		cells[i].removeEventListener('click', turnClick, false);
     }

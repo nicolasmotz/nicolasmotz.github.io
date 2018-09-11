@@ -56,7 +56,7 @@ function startGame() {
 function turnClick(square) {
     
 	turn(square.target.id, huPlayer);
-    if (checkWin(Board) != huPlayer) {
+    if (checkWin(Board) != huPlayer & math.sum(math.abs(Board)) < 9) {
         move = choice(Board);
         turn(move, aiPlayer);
     }
@@ -64,15 +64,20 @@ function turnClick(square) {
 }
 
 function turn(squareId, player) {
-	Board = math.subset(Board, math.index(0, parseInt(squareId)), player);
+	
+    Board = math.subset(Board, math.index(0, parseInt(squareId)), player);
     cells[parseInt(squareId)].removeEventListener('click', turnClick, false);
     if (player == -1) {
         document.getElementById(squareId).innerText = 'X';
     } else {
         document.getElementById(squareId).innerText = 'O';
     }
-    if (checkWin(Board) === player) gameover(player);
-    if (math.sum(math.abs(Board)) === 9) gameover(0);
+    if (checkWin(Board) === player) {
+        gameover(player);
+    } else if (math.sum(math.abs(Board)) === 9) {
+        gameover(0);
+    }
+    
 }
 
 function sigmoid(x) {

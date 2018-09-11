@@ -44,6 +44,7 @@ function startGame() {
     for (var i = 0; i < cells.length; i++) {
 		cells[i].innerText = '';
 		cells[i].addEventListener('click', turnClick, false);
+        cells[i].style.color = 'black';
     }
     
     if (math.mod(countRounds, 2) === 0) {
@@ -114,14 +115,45 @@ function checkWin(Board) {
     var B;
     
     function check(B) {
-        if (math.sum(math.subset(B, math.index([0, 1, 2],0))) === 3 |
-            math.sum(math.subset(B, math.index([0, 1, 2],1))) === 3 |
-            math.sum(math.subset(B, math.index([0, 1, 2],2))) === 3 |
-            math.sum(math.subset(B, math.index(0,[0, 1, 2]))) === 3 |
-            math.sum(math.subset(B, math.index(1,[0, 1, 2]))) === 3 |
-            math.sum(math.subset(B, math.index(2,[0, 1, 2]))) === 3 |
-            math.trace(B) === 3 |
-            math.sum(math.subset(B, math.index(0,2)),math.subset(B, math.index(1,1)),math.subset(B, math.index(2,0))) === 3) {
+        if (math.sum(math.subset(B, math.index([0, 1, 2],0))) === 3) {
+            cells[0].style.color = "green";
+            cells[3].style.color = "green";
+            cells[6].style.color = "green";
+            return 1;
+        } else if (math.sum(math.subset(B, math.index([0, 1, 2],1))) === 3) {
+            cells[1].style.color = "green";
+            cells[4].style.color = "green";
+            cells[7].style.color = "green";
+            return 1;
+        } else if (math.sum(math.subset(B, math.index([0, 1, 2],2))) === 3) {
+            cells[2].style.color = "green";
+            cells[5].style.color = "green";
+            cells[8].style.color = "green";
+            return 1;
+        } else if (math.sum(math.subset(B, math.index(0,[0, 1, 2]))) === 3) {
+            cells[0].style.color = "green";
+            cells[1].style.color = "green";
+            cells[2].style.color = "green";
+            return 1;
+        } else if (math.sum(math.subset(B, math.index(1,[0, 1, 2]))) === 3) {
+            cells[3].style.color = "green";
+            cells[4].style.color = "green";
+            cells[5].style.color = "green";
+            return 1;
+        } else if (math.sum(math.subset(B, math.index(2,[0, 1, 2]))) === 3) {
+            cells[6].style.color = "green";
+            cells[7].style.color = "green";
+            cells[8].style.color = "green";
+            return 1;
+        } else if (math.trace(B) === 3) {
+            cells[0].style.color = "green";
+            cells[4].style.color = "green";
+            cells[8].style.color = "green";
+            return 1;
+        } else if (math.sum(math.subset(B, math.index(0,2)),math.subset(B, math.index(1,1)),math.subset(B, math.index(2,0))) === 3) {
+            cells[2].style.color = "green";
+            cells[4].style.color = "green";
+            cells[6].style.color = "green";
             return 1;
         } else {
             return 0;

@@ -1,0 +1,17 @@
+Create Icons:
+
+Crop to 1.33:1
+
+scale to 400x300
+
+Apply Filters>Decor>Round Corners
+Settings:
+Radius 30
+Offset 15x15
+Blur radius 5
+Untick Background
+
+select background layer
+
+Colors>Exposure
+Black level -0.1

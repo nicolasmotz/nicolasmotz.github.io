@@ -5,38 +5,60 @@
 <head>
 	<style>
 		body {
-		padding: 600px 0px 0px 0px;
+		margin-top: 0px;
+		padding: 0px 0px 0px 0px;
 		background-image: url("background.jpg");
 		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: 100%;
 		background-color: black;
-		}
-		
-		div {
-		padding: 10px 10px 5px 10px;
-		background-color: gray;
+		font-family: andale mono, sans-serif;
 		}
 		
 		.full-bleed {
-		box-shadow: 0 0 0 100vmax gray;
+		box-shadow: 0 0 0 100vmax rgba(80, 80, 100, 0.8);
 		clip-path: inset(0 -100vmax); 
+		padding: 20px 10px 10px 10px;
+		background-color: rgba(80, 80, 100, 0.8);
+		}
+		
+		a {
+		padding: 0px 10px 0px 0px;
 		}
 	</style>
 </head>	
 	
 <title>Home</title>
 
-<body>
+<body onload="startTime()">
+
+<div style="font-size:300%; color:white" class="full-bleed">
+	
+	<a href="ms-settings:bluetooth" style="float:right;">
+		<img src="wifi.png" alt="Wifi" width="30">
+		</a>
+		
+		<a href="ms-settings:bluetooth" style="float:right;">
+			<img src="Bluetooth.png" alt="Bluetooth" width="15">
+			</a>
+
+
+<a id="txt">
+</a>
+
+</div>
+
+<div style="padding-top:350px">
+	
+</div>
 
 <div class="full-bleed">
 <a href="http://www.netflix.com">
 <img src="netflix.png" alt="Netflix" width="150">
 </a>
-
+                 
 <a href="http://www.disneyplus.com">
 <img src="disney.png" alt="Disney+" width="150">
-</a>
 </a>
 
 <a href="http://www.youtube.com">
@@ -51,13 +73,27 @@
 <img src="vodafonetv.png" alt="Vodafone TV" width="150">
 </a>
 
-<a href="ms-settings:bluetooth">
-<img src="Bluetooth.png" alt="Bluetooth" width="40">
-</a>
-
 </div>
 
 
+
+
+<script>
+	<!-->https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock<-->
+	function startTime() {
+	const today = new Date();
+	let h = today.getHours();
+	let m = today.getMinutes();
+	m = checkTime(m);
+	document.getElementById('txt').innerHTML =  h + ":" + m;
+	setTimeout(startTime, 1000);
+	}
+	
+	function checkTime(i) {
+	if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+	return i;
+	}
+</script>
 
 </body>
 </html>

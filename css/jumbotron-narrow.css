@@ -2,8 +2,7 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-left: -30px;
-  margin-right: -30px;
+  margin: 0;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -141,7 +140,7 @@ h1, h2 {
   font-size: 16px;
   }
 }
-}
+
 
 .cv p {
   font-size: 16px;
